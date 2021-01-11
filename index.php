@@ -4,7 +4,6 @@
     include("lib/mybd2.cls.php");
     include("lib/cours.cls.php");
     include("lib/prof.cls.php");
-    include("lib/vie-etudiante.cls.php");
 
     $cookie_splash = "noSplash";
     setcookie($cookie_splash, time() + (86400));
@@ -16,7 +15,7 @@
     <title>TIM Maisonneuve - Techniques d'intégration multimédia du Collège de Maisonneuve</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site officiel de la technique d'intégration multimédia du Collège de Maisonneuve.">
-    <meta name="author" content="Les Cookies - Sidd Benoît, Marie-Lou Denis, Rena Jamaleddine, Valerii Kuzmenko">
+    <meta name="author" content="Les Cookies - Sidd Benoît, Marie-Lou Denis, Rena Jamaleddine">
     <meta name="keywords" content="TIM, techniques d'intégration multimédia, Collège Maisonneuve, 3D, Jeu vidéo, Web, Design, Graphisme, formation post-secondaire, cours, enseignants, professeurs, vie étudiante">
     <link rel="stylesheet" href="css/style.css">
     <link rel="apple-touch-icon" sizes="180x180" href="medias/favicon/apple-touch-icon.png">
@@ -37,8 +36,6 @@
             include("inclusions/accueil.php");
             // Inclure la section cours
             include("inclusions/cours.php");
-            // Inclure la section vie étudiante
-            include("inclusions/vie-etudiante.php");
             // Inclure la section profs
             include("inclusions/profs.php");
         ?>
@@ -70,9 +67,6 @@
 
     <!-- Changer l'arrière-plan de la barre de navigation lorsque l'utilisateur défile dans la page -->
     <script type="text/javascript">window.onscroll = function(){scrollFunction()};</script>
-
-    <!-- Carrousel vie étudiante (Hassan Chehouri) -->
-    <script type="text/javascript" src="js/vie-etudiante.js"></script>
 
     <!-- Ne pas afficher l'écran d'atterrissage (cookie) -->
     <?php

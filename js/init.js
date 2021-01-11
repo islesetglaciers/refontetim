@@ -20,12 +20,6 @@
         liensNav[i].addEventListener("click", changerSectionCourante);
     }
 
-    // Cacher la section vie étudiante dans la navigation mobile
-    if (document.querySelector("body").offsetWidth <= 960) {
-        liensNav[2].style.display = "none";
-        document.querySelector("#vie-etudiante").classList.remove("scrollable");
-    }
-
     // Changer la section active dans la navigation lorsque l'utilisateur défile dans la page 
     // ajustement du scroll, simple correction throttle.
     // Source: https://codeburst.io/throttling-and-debouncing-in-javascript-b01cad5c8edf [Auteur: Jhey Tompkins]
