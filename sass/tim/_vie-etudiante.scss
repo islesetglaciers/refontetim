@@ -1,0 +1,175 @@
+#vie-etudiante {
+    padding-top: 10vh;
+    
+    #flecheGauche {
+        font-family: $police__icones;
+        margin-right:  15px;
+        color:  $couleur__orange;
+        font-size: 90px;
+        display: flex;
+        cursor: pointer;
+    }
+
+    #flecheDroite {
+        font-family: $police__icones;
+        color:  $couleur__orange;
+        font-size: 90px;
+        display: flex;
+        cursor: pointer;
+    }
+    
+    .titre-section {
+        display: flex;
+        justify-content: start;
+        height: 3em;
+        line-height: 3em;
+
+        h1 {
+            font-family: $police__B612-regular;
+            font-weight: 700;
+            color: $couleur__orange;
+            text-transform: uppercase;
+            margin: .5em auto;
+        }
+
+        hr {
+            border: 1px $couleur__orange solid;
+            width: 70%;
+            height: 0;
+            margin: 2.1em 2em 0 0;
+        }
+    }
+
+    .carrousel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     
+        img {
+            box-shadow: -3px 5px 20px 0.5px rgba(0, 0, 0, 0.25);
+        }
+       
+        .descCarrousel {
+            width: 90%;
+            margin-left: 7em ;            
+
+            #titre_ve {
+                color:$couleur__jaune;
+                padding-left: 40%;
+                font-size: 3em;
+                padding-left: 2.7em;
+            }
+             
+            #information_ve {
+                margin-right: 30px;
+                padding: 20px 10px;
+                display: flex;
+                font-size: 2em;
+            }
+        }
+             
+        #ipremiereimage {
+            position: relative;
+            left: 8% ;
+            margin-top: 25%;
+            width: 100%;
+            z-index: +2;
+        }
+
+        #i2 {
+            position: relative;
+            left: -97%;
+            top: 22%;
+            width: 70%;
+            height: 70%;
+            z-index: +1; 
+        }
+
+        #i3 {
+            position: relative;
+            left: -2%;
+            top: -100%;
+            width: 70%;
+            height: 70%;
+        }
+
+        #i4 {
+            width: 50%;
+        }
+
+        .disnone {
+            display:none;
+        }
+
+        .disblock {
+            display:block;
+        }
+
+        #info {
+            position: relative;
+            bottom: 600px;
+        }
+
+        .disflex {
+            display:flex;
+        }
+    }
+    
+    @media (max-width:960px) {
+        // display: none;
+        visibility: hidden;
+        height: 0;
+        width: 0;
+
+        #ipremiereimage {
+            position: relative;
+            left: 100%;
+            width: 100%;
+            height: 100%;
+            z-index: +2;
+        }
+
+        #i2 {
+            position: relative;
+            width: 100%;
+            height: 70%;
+            z-index: +1;
+        }
+
+        #i3 {
+            position: relative;
+            width: 100%;
+            height: 70%;
+        }
+
+        .descCarrousel {
+            width: 90%;
+            margin-left: 7em ;
+
+            #titre_ve {
+                color:$couleur__jaune;
+                padding-left: 40%;
+                font-size: 1em;
+                padding-left: 2.7em;
+            }
+            
+            #information_ve {
+                margin-right: 30px;
+                padding: 20px 10px;
+                display: flex;
+                font-size: 0.1em;
+            }
+        }
+    }     
+}
+   
+    
+    
+    
+
+
+
+
+
+
+
+

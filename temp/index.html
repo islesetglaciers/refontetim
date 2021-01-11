@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIM - Département Techniques Intégration Multimédia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="medias/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="medias/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="medias/favicon/favicon-16x16.png">
+</head>
+<body>
+    
+    <section id="splash" >
+        <div class="container">
+            <div class="box">
+                <div class="imgbox">
+                    <img src="medias/splash/_LogoTIM1.png" class="TIM">
+                </div>
+                <div class="contentbox">
+                    <img src="medias/splash/_LogoTIM.png" class="TIM">
+                </div>
+                <div class="contentbox1">
+                    <img src="medias/splash/_LogoTIM1.png" class="TIM">
+                </div>
+
+            </div>
+        </div>
+        <video autoplay muted preload="auto" id="myVideo">
+            <source src="medias/splash/bg_video.mp4" type="video/mp4">
+       </video>
+        <button>continuer</button>
+    </section>
+   
+    <div id="conteneur">
+        <header>
+            <nav>
+                <div id="logo">
+                    <img src="medias/logo.png" alt="">
+                </div>
+                <div id="menu-toggle">
+                    <input type="checkbox">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <ul>
+                        <li class="lien-nav actif"><a href="#conteneur">accueil</a></li>
+                        <li class="lien-nav"><a href="#cours">cours</a></li>
+                        <li class="lien-nav"><a href="#vie-étudiante">vie étudiante</a></li>
+                        <li class="lien-nav"><a href="#professeurs">professeurs</a></li>
+                        <li class="lien-nav"><a href="#contact">contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <section id="accueil">
+            <div id="titres-accueil">
+                <ul>
+                    <li onclick='currentSlide(1)'>/programmation</li>
+                    <li onclick='currentSlide(2)'>/création</li>
+                    <li onclick='currentSlide(3)'>/vie étudiante</li>
+                </ul>
+                <h1>TECHNIQUES</br>D’INTÉGRATION</br>MULTIMÉDIA</h1>
+                <p>Maisonneuve est le seul cégep sur l’Île de Montréal à offrir ce programme qui vous offre une immersion dans le monde du jeu 2D/3D, du Web, des technologies mobiles et des médias numériques, tout en apprenant différents langages de programmation.</p>
+            </div>
+            <div id="carousel-accueil">     <!-- //Debut Carousel-Accueil -->
+
+
+                <div class="slideshow-container">
+                    <div class="slideshow-inner">
+                      <div class="mySlides fade">
+                    
+                        <img class="clip-animation" src='medias/accueil/prog.png' style='width: 100%;' alt="sally lightfoot crab"/>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                    
+                         <img class="clip-animation" src='medias/accueil/crea.png' style='width: 100%;' alt="fighting nazca boobies"/>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                    
+                        <img class="clip-animation" src='medias/accueil/vie-etudiante.png' style='width: 100%;' alt="otovalo waterfall"/>
+                      </div> 
+                    
+                    
+                    
+                      <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
+                      <a class="next" onclick='plusSlides(1)'>&#10095;</a>
+                    </div>
+                    <br/>
+                    
+                    
+                    <div style='text-align: center;'>
+                      <span class="dot" onclick='currentSlide(1)'></span>
+                      <span class="dot" onclick='currentSlide(2)'></span>
+                      <span class="dot" onclick='currentSlide(3)'></span> 
+                      <span class="dot" onclick='currentSlide(4)'></span>
+                    </div>
+                    
+                    </div>
+
+
+
+
+
+
+                <!-- <img src="medias/accueil/tim.jpg" alt=""> -->
+<!-- 
+                <div class="slideshow-container">
+                    <div class="slideshow-inner">
+                      <div class="mySlides fade">
+                    
+                        <img  src='medias/accueil/red.jpg' style='width: 100%;' alt="img1"/>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                    
+                        <img  src='medias/accueil/tim.jpg' style='width: 100%;' alt="img2"/>
+                      </div>
+                    
+                      <div class="mySlides fade">
+                    
+                        <img  src='medias/accueil/blue.jpg' style='width: 100%;' alt="img3"/>
+                      </div>
+                    
+                    </div>
+                    
+                </div> -->
+                <br/>
+                    
+                    </div> 
+            <!-- </div>                          //Debut Carousel-Accueil -->
+        </section>
+        <section id="cours">
+            <div class="titre-section">
+                <h1>Cours</h1>
+                <hr>
+            </div>
+            <ul id="filtre-sessions">
+                <li>/1re session</li>
+                <li class="session-active">/2e session</li>
+                <li>/3e session</li>
+                <li>/4e session</li>
+                <li>/5e session</li>
+                <li>/6e session</li>
+            </ul>
+            <div class="dropdown-menu">
+                <button class="dropbtn">1re session<i>&#xe907;</i></button>
+                <div class="dropdown-contenu cacher">
+                    <a href="#">/1re session</a>
+                    <a href="#">/2e session</a>
+                    <a href="#">/3e session</a>
+                    <a href="#">/4e session</a>
+                    <a href="#">/5e session</a>
+                    <a href="#">/6e session</a>
+                </div>
+            </div>
+            <div id="les-cours">
+                <div class="un-cours">
+                    <div class="titre-cours">
+                        <img src="medias/icones/logoCreation.png" alt="" class="logo-cours">
+                        <h2>Effets spéciaux et animation</h2>
+                    </div>
+                    <div class="details-cours cacher">
+                        <p class="ponderation">Pondération : 2-2-3</p>
+                        <p class="prealables">Préalable : Relatif : Création vidéo (582-1M1-MA)</p>
+                        <p class="description-cours">
+                            Ce cours permet d'approfondir la formation de l’étudiant en matière de traitement d’images en mouvement et de traitement sonore. L’étudiant poursuit son apprentissage des techniques de prise de vues avec des caméras virtuelles. Il développe sa capacité à utiliser des techniques d’effets spéciaux visuels : animations graphiques, initiation à l’environnement 3D, caméras et lumières virtuelles, composition numérique et techniques d’écran vert.
+                            <br>L'étudiant est amené à appliquer adéquatement les techniques d'optimisation des fichiers sonores et vidéo en fonction de différents modes de diffusion et d’intégration à un projet multimédia.
+                        </p>
+                        
+                        <div class="prof-qui-enseigne ">
+                            <h3>Enseignant.e.s</h3>
+                            <div class="prof-cours">
+                                <div class="visage-logo">
+                                    <img src="medias/icones/logoProg.png" alt="" class="logo-profs">
+                                    <img src="medias/profs/vincent-leblanc.jpg" alt class="visage-prof">
+                                </div>
+                                <div class="desc-prof-cours">
+                                    <h5>Vincent Leblanc</h5>
+                                    <h6>vleblanc@cmaisonneuve.qc.ca</h6>
+                                    <p>Formé à l’ÉTS avec une spécialisation en ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Projets</h3>
+                        <div class="projets">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="un-cours">
+                    <div class="titre-cours">
+                        <img src="medias/icones/logoCreation.png" alt="" class="logo-cours">
+                        <h2>Conception graphique et imagerie vectorielle</h2>
+                    </div>
+                    <div class="details-cours cacher">
+                        <p class="ponderation">Pondération: 3-3-3</p>
+                        <p class="prealables">Préalable: Relatif: Conception graphique et imagerie matricielle (582-1M2-MA)</p>
+                        <p class="description-cours">
+                            Dans ce cours, l’étudiant poursuit l’apprentissage des notions liées à la conception, à la communication graphique et au traitement des images fixes vectorielles.
+                        </p>
+                        <div class="prof-qui-enseigne ">
+                            <h3>Enseignant.e.s</h3>
+                            <div class="prof-cours">
+                                <div class="visage-logo">
+                                    <img src="medias/icones/logoProg.png" alt="" class="logo-profs">
+                                    <img src="medias/profs/vincent-leblanc.jpg" alt class="visage-prof">
+                                </div>
+                                <div class="desc-prof-cours">
+                                    <h5>Vincent Leblanc</h5>
+                                    <h6>vleblanc@cmaisonneuve.qc.ca</h6>
+                                    <p>Formé à l’ÉTS avec une spécialisation en ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Projets</h3>
+                        <div class="projets">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                    </div>                    
+                </div>
+                <div class="un-cours">
+                    <div class="titre-cours">
+                        <img src="medias/icones/logoCreation.png" alt="" class="logo-cours">
+                        <h2>Effets spéciaux et animation</h2>
+                    </div>
+                    <div class="details-cours cacher">
+                        <p class="ponderation">Pondération : 2-2-3</p>
+                        <p class="prealables">Préalable : Relatif : Création vidéo (582-1M1-MA)</p>
+                        <p class="description-cours">
+                            Ce cours permet d'approfondir la formation de l’étudiant en matière de traitement d’images en mouvement et de traitement sonore. L’étudiant poursuit son apprentissage des techniques de prise de vues avec des caméras virtuelles. Il développe sa capacité à utiliser des techniques d’effets spéciaux visuels : animations graphiques, initiation à l’environnement 3D, caméras et lumières virtuelles, composition numérique et techniques d’écran vert.
+                            <br>L'étudiant est amené à appliquer adéquatement les techniques d'optimisation des fichiers sonores et vidéo en fonction de différents modes de diffusion et d’intégration à un projet multimédia.
+                        </p>
+                        <div class="prof-qui-enseigne ">
+                            <h3>Enseignant.e.s</h3>
+                            <div class="prof-cours">
+                                <div class="visage-logo">
+                                    <img src="medias/icones/logoProg.png" alt="" class="logo-profs">
+                                    <img src="medias/profs/vincent-leblanc.jpg" alt class="visage-prof">
+                                </div>
+                                <div class="desc-prof-cours">
+                                    <h5>Vincent Leblanc</h5>
+                                    <h6>vleblanc@cmaisonneuve.qc.ca</h6>
+                                    <p>Formé à l’ÉTS avec une spécialisation en ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <h3>Projets</h3>
+                        <div class="projets">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grille-cheminement">
+                <h2>grille de cheminement</h2>
+                <svg width="223" height="109" viewBox="0 0 223 109" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M221.939 11.1477C230.035 24.2234 190.592 52.409 145.336 75.6548C99.8731 98.7554 48.8048 117.061 22.4403 105.003C-3.92421 93.0892 -5.58496 51.1014 11.853 28.8726C29.4985 6.64377 66.0352 4.31919 112.121 2.13989C158.207 0.105884 213.842 -1.92813 221.939 11.1477Z" fill="#FE781D"/>
+                </svg>   
+            </div>
+        </section>
+        <section id="vie-etudiante">
+            <div class="titre-section">
+                <hr>
+                <h1>vie&nbsp;étudiante</h1>
+            </div>
+            <div class="carrousel">
+                <figure>
+                    <img id="image_ve" src="medias/vie-etudiante/party-tim.jpg" alt="">
+                </figure>
+                <div class="descCarrousel">
+                    <h2 id="titre_ve">Party TIM XX</h2>
+                    <div id="flecheGauche" onclick="defiler(-1)">&#xe905;</div>
+                    <div id="information_ve">Pour célébrer les 20 ans de l’éxistence du TIM, le département a organisé une fête pour réunir les étudiant.e.s, les ancien.ne.s et les professeurs</div>
+                    <div id="flecheDroite" onclick="defiler(1)">&#xe904;</div> 
+                </div>
+            </div>
+        </section>
+        <section id="professeurs">
+            <div class="titre-section">
+                <h1>professeurs</h1>
+                <hr>
+            </div>
+            <ul id="menu-profs">
+                <li>/tous</li>
+                <li class="volet-actif">/programmation</li>
+                <li>/création</li>
+            </ul>
+            <div class="dropdown-menu">
+                <button class="dropbtn">/Programmation <i>&#xe907; down</i></button>
+                <div class="dropdown-contenu cacher">
+                <a href="#">/tous</a>
+                <a href="#">/programmation</a>
+                <a href="#">/création</a>
+                </div>
+            </div>
+            <ul class="profs">
+                <li class="prof">
+                    <div class="visage-logo">
+                        <img src="medias/icones/logoProg.png" alt="" class="logo-profs">
+                        <img src="medias/profs/camille-semaan.jpg" alt="" class="visage-prof">
+                    </div>
+                    <div class="details">
+                        <h2>Camille Semaan</h2>
+                        <h3>csemaan@cmaisonneuve.qc.ca</h3>
+                        <p class="desc-courte">Ma vocation : communiquer connaissances et savoir-faire.
+                            Ma devise : 'Comprendre et ne pas juger' (Georges Simenon)</p>
+                        <p class="desc-longue cacher">Ma vocation : communiquer connaissances et savoir-faire.
+                            Ma devise : 'Comprendre et ne pas juger' (Georges Simenon) On a tous notre temps txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt txt</p>
+                            <p class="lien cacher" href="https://tim-maisonneuve.xyz/equipe/">Vous pouvez suivre mes projets ici : www.camilleestcool.qc.ca</p>
+                    </div>
+                </li>
+                <li class="prof">
+                    <div class="visage-logo">
+                        <img src="medias/icones/logoProg.png" alt="" class="logo-profs">
+                        <img src="medias/profs/eddy-martin.jpg" alt="" class="visage-prof">
+                    </div>
+                    <div class="details">
+                        <h2>Eddy Martin</h2>
+                        <h3>emartin@cmaisonneuve.qc.ca</h3>
+                        <p class="desc-courte">Des études en mathématiques informatiques (B. Sc) et une maîtrise en traitement d'images à l'UQAM m'ont amené à m'intéresser plus particulièrement à la programmation Web.</p>
+                        <p class="desc-longue cacher">Des études en mathématiques informatiques (B. Sc) et une maîtrise en traitement d'images à l'UQAM m'ont amené à m'intéresser plus particulièrement à la programmation Web.
+
+                            J'ai côtoyé l'industrie pendant plusieurs années comme programmeur analyste pour finalement trouvé ma vocation en enseignement au Collège de maisonneuve.
+                            
+                            Les sujets qui m'intéresse touchent directement la création de sites Web adaptatifs du côté client et serveur.
+                            
+                            J'enseigne au département TIM depuis 2001.</p>
+                            <p class="lien cacher" href="">Vous pouvez suivre mes projets ici : www.eddyestcool.qc.ca</p>
+                    </div>
+                </li>
+                <li class="prof">
+                    <div class="visage-logo">
+                        <img src="medias/icones/logoProg.png" alt="" class="logo-profs">
+                        <img src="medias/profs/vincent-leblanc.jpg" alt="" class="visage-prof">
+                    </div>
+                    <div class="details">
+                        <h2>Vincent Leblanc</h2>
+                        <h3>vleblanc@cmaisonneuve.qc.ca</h3>
+                        <p class="desc-courte">Formé à l’ÉTS avec une spécialisation en ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.</p>
+                        <p class="desc-longue cacher">Formé à l’ÉTS avec une spécialisation en          ordinateurs et automatismes, j'ai ensuite obtenu ma maîtrise en Sciences de la communication à l’Université de Montréal, où mon mémoire portait sur les interfaces personne-machine.
+                            J'ai travaillé plusieurs années dans le secteur privé pour le compte de différentes entreprises, principalement à titre de programmeur, d'intégrateur ou de concepteur d'interfaces.
+                            
+                            J’enseigne au Collège de Maisonneuve depuis l’automne 2001 et j'ai eu la chance d'y donner un vaste assortiment de cours, à tel point que je n'arrive plus à me rappeler leur nombre!
+                            
+                            Ces dernières années, j'ai donné plus fréquemment des cours de programmation Web (HTML, CSS, Javascript) et d'image numérique (Photoshop).</p>
+                            <p class="lien cacher" href="">Vous pouvez suivre mes projets ici : www.vincentestcool.qc.ca</p>
+                    </div>
+                </li>
+                <li class="prof">
+                    <div class="visage-logo">
+                        <img src="medias/icones/logoProg.png" alt="" class="logo-profs">
+                        <img src="medias/profs/johanne-massé.jpg" alt="" class="visage-prof">
+                    </div>
+                    <div class="details">
+                        <h2>Johanne Massé</h2>
+                        <h3>jmasse@cmaisonneuve.qc.ca</h3>
+                        <p class="desc-courte">Je suis gestionnaire de projet et architecte-paysagiste de formation mais, paradoxalement, passionnée depuis toujours par les 0 et les 1...</p>
+                        <p class="desc-longue cacher">Je suis gestionnaire de projet et architecte-paysagiste de formation mais, paradoxalement, passionnée depuis toujours par les 0 et les 1... J'ai cofondé à la fin des années 80 une entreprise spécialisée dans le développement de logiciels pour l'aménagement du territoire.
+
+                            À l'aube du nouveau millénaire, j'ai fait le grand saut et réorienté ma carrière en multimédia. J’ai fait mes débuts à titre de consultante et j'exerce la profession d'enseignante depuis 2001. Vous devinerez par la maxime d'introduction que j'ai un petit faible pour la gestion de projets multimédias.
+                            
+                            Mais ce n'est pas mon seul dada, je me passionne aussi pour les logiciels-auteurs et la programmation, notamment Flash et ActionScript. Parallèlement à mes activités d'enseignante, je poursuis également une maîtrise en pédagogie.
+                            
+                            </p>
+                            <p class="lien cacher" href="">Vous pouvez suivre mes projets ici : www.johanneestcool.qc.ca</p>
+                    </div>
+                </li>
+            </ul>
+            <h3 id="voir-plus">voir plus</h3>
+        </section>
+    </div>
+    <svg id="lignes_footer" width="100%" height="183" viewBox="0 0 2504 183" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.33019 175.73C105.123 181.94 414.898 181.231 855.652 128.705C1296.41 76.1802 1801.95 84.001 1999.63 94.477C2075.73 99.4203 2283.04 99.2454 2503.51 59" stroke="white" stroke-opacity="0.85" stroke-width="2"/>
+        <path d="M0.5 163.5C9.69081 166.7 574.426 87.8333 855.645 48C948.718 34.1667 1183.72 20 1379.12 74C1574.53 128 2013.32 121.5 2208.29 111.5L2500.5 80" stroke="white"/>
+        <path d="M1 164C148.176 117.72 507.885 20.7039 769.31 2.87763C1096.09 -19.4053 1298.15 164 1599.98 164C1901.82 164 2006.09 2.87763 2223.61 2.87763C2397.63 2.87763 2481.04 2.87763 2501 2.87763" stroke="white" stroke-opacity="0.75" stroke-width="2"/>
+    </svg>   
+    <footer id="contact">
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.cmaisonneuve.qc.ca/programme/integration-multimedia/"><img src="medias/logo.png" alt=""></a>
+                </li>
+                <li>
+                    <a href="https://discord.gg/53vFvr9">&#xe900;</a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/groups/244018972413874/?fref=ts">&#xea91;</a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/maisonneuvetim/">&#xea92;</a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/TIMaisonneuve">&#xea9d;</a>
+                </li>
+                <li>
+                    <a href="https://ca.linkedin.com/in/tim-maisonneuve-9407b7131">&#xeac9;</a>
+                </li>
+                <li>
+                    <a href="https://www.cmaisonneuve.qc.ca/"><img src="medias/logo_m9.jpeg" class="img-icone"></a>
+                </li>
+            </ul>
+        </nav>
+        <p>Réalisé pour le département des Techniques d'intégration multimédia du Collège de Maisonneuve</p>
+    </footer>
+    <!-- ------------------Script---------------- -->
+     
+        <!-- Tilt-splash -->
+        <script type="text/javascript" src="js/afficher_splash-site.js"></script>
+        <script type="text/javascript" src="js/vanilla-tilt.js"></script>
+        <script type="text/javascript">
+            VanillaTilt.init(document.querySelector(".your-element"), {
+                    max: 25,
+                    speed: 400
+                });
+           //FIN if Tilt-splash
+                
+                //It also supports NodeList
+            VanillaTilt.init(document.querySelectorAll(".box"));
+        </script>   
+        <script type="text/javascript" src="js/afficher-details-cours.js"></script>
+        <script type="text/javascript" src="js/afficher-details-profs.js"></script>
+        <script type="text/javascript" src="js/sticky-nav.js"></script>
+        <script type="text/javascript">window.onscroll = function(){scrollFunction()};</script>
+    
+            <!-- carousel-accueil -->
+            <script type="text/javascript" src="js/carousel-accueil.js"></script>
+            <!-- fin-carousel-accueil -->
+
+            <!-- carousel-vie etudiante -->
+            <script type="text/javascript" src="js/vie-etudiante.js"></script>
+</body>
+</html>
