@@ -12,7 +12,6 @@
             <ul>
                 <li class="lien-nav"><a href="#conteneur">accueil</a></li>
                 <li class="lien-nav"><a href="#cours">cours</a></li>
-                <li class="lien-nav"><a href="#vie-etudiante">vie étudiante</a></li>
                 <li class="lien-nav"><a href="#professeurs">professeurs</a></li>
                 <li class="lien-nav"><a href="#contact">contact</a></li>
             </ul>
